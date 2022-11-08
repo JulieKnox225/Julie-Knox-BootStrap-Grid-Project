@@ -14,36 +14,89 @@
 </head>
 <body>
   <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid justify-content-between">
           <!--Hamburger Menu on Mobile Toggler-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <form class="d-flex"><!--Search button-->
-            <input class="form-control me-2 order-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2 order-sm-1" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success order-1" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
           <!--'member profile'-->
-          <a class="navbar-brand" href="#"><i class="fa-solid fa-user"></i></a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="padded-group navbar-nav me-auto mb-2 mb-lg-0 list-group list-group-horizontal">
-              <li class="nav-item list-group-item list-group-item"> <!--Compose button-->
-                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-plus"></i></a>
-              </li>
-              <li class="nav-item list-group-item list-group-item"> <!--Trash button-->
-                <a class="nav-link" href="#"><i class="fa-solid fa-trash-can"></i></a>
-              </li>
-              <li class="nav-item list-group-item list-group-item"><!--Favorite button-->
-                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-              <li class="nav-item list-group-item list-group-item"><!--Folder button-->
-                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-folder"></i></a>
-              </li>
-            </ul>
+          <a class="navbar-brand order-md-3 ps-5" href="#"><i class="fa-solid fa-user"></i></a>
+          <div class="collapse navbar-collapse order-md-first" id="navbarTogglerDemo03">
+              <ul class="pt-3 pb-md-3 navbar-nav me-auto mb-2 mb-lg-0 list-group list-group-horizontal"> <!--Group of buttons-->
+                <li class="nav-item list-group-item"><!--Compose button-->
+                  <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-plus"></i></a>
+                </li>
+                <li class="nav-item list-group-item"><!--Trash button-->
+                  <a class="nav-link" href="#"><i class="fa-solid fa-trash-can"></i></a>
+                </li>
+                <li class="nav-item list-group-item"><!--Favorite button-->
+                  <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-star"></i></a>
+                </li>
+                <li class="nav-item list-group-item"><!--Folder button-->
+                  <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-folder"></i></a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
       </nav>
+      <!--End of Navbar-->
+      <!--Fake Email list-->
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1"><i class="fa-solid fa-user"></i>   Bilbo Baggins</h5><!--Who sent it-->
+            <p class="text-muted"><i class="fa-solid fa-reply">   </i><i class="fa-solid fa-star">    </i></p><!--Actions-->
+          </div>
+        <p class="mb-1">What have I got in my pocket..?</p><!--Subject-->
+        <small class="text-muted">Weird. It looks like a ring.</small><!--Body message-->
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1"><i class="fa-solid fa-user"></i>   Frodo Baggins</h5><!--Who sent it-->
+            <p class="text-muted"><i class="fa-solid fa-reply">   </i><i class="fa-solid fa-star">    </i></p><!--Actions-->
+          </div>
+          <p class="mb-1">Sam!!!</p><!--Subject-->
+          <small class="text-muted">I need help :(</small><!--Body message-->
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1"><i class="fa-solid fa-user"></i>   Gandalf</h5><!--Who sent it-->
+            <p class="text-muted"><i class="fa-solid fa-reply">   </i><i class="fa-solid fa-star">    </i></p><!--Actions-->
+          </div>
+          <p class="mb-1">Did you put your name in the goblet of fire?!?</p><!--Subject-->
+          <small class="text-muted">Oh wait- wrong fandom</small><!--Body message-->
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1"><i class="fa-solid fa-user"></i>   Gollum</h5><!--Who sent it-->
+            <p class="text-muted"><i class="fa-solid fa-reply">   </i><i class="fa-solid fa-star">    </i></p><!--Actions-->
+          </div>
+          <p class="mb-1">My Precious!!</p><!--Subject-->
+          <small class="text-muted">Someone stoles it!</small><!--Body message-->
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1"><i class="fa-solid fa-user"></i>   The Ring</h5><!--Who sent it-->
+            <p class="text-muted"><i class="fa-solid fa-reply">   </i><i class="fa-solid fa-star">    </i></p><!--Actions-->
+          </div>
+          <p class="mb-1">Im soooo cool.</p><!--Subject-->
+          <small class="text-muted">I can make you cool too.</small><!--Body message-->
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1"><i class="fa-solid fa-user"></i>   Legolas</h5><!--Who sent it-->
+            <p class="text-muted"><i class="fa-solid fa-reply">   </i><i class="fa-solid fa-star">    </i></p><!--Actions-->
+          </div>
+          <p class="mb-1">They're taking the hobbits to Isengard!</p><!--Subject-->
+          <small class="text-muted">-gard -gard -gard</small><!--Body message-->
+        </a>
+      </div>
+      <!--End of fake Emails-->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
